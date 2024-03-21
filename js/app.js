@@ -1,10 +1,15 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import {createRoot} from "react-dom/client";
+import NewTask from "./new/newTask";
+import TaskList from "./PageElements/taskList";
 
 function App() {
-  return <h1>Hello World</h1>;
+    return <>
+        <NewTask/>
+        <TaskList/>
+    </>
 }
 
 const container = document.getElementById("app");
 const root = createRoot(container);
-root.render(<App />);
+root.render(<App/>);
